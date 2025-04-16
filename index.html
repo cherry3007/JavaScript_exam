@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      🍕 <strong>REACT PIZZA</strong>
+      <p>самая вкусная пицца во вселенной</p>
+    </div>
+    <div class="controls">
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+      <div class="cart">
+        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filters">
+    <button class="active">Все</button>
+    <button>Мясные</button>
+    <button>Вегетарианская</button>
+    <button>Гриль</button>
+    <button>Острые</button>
+    <button>Закрытые</button>
+  </nav>
+  <select id="sortSelect" class="sortSelect">
+    <option value="">Сортировать по</option>
+    <option value="popularity">Популярности</option>
+    <option value="price">По цене</option>
+    <option value="name">По алфавиту</option>
+  </select>
+  
+  <main>
+    <h2>Все пиццы</h2>
+    <div id="pizza-list" class="pizza-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

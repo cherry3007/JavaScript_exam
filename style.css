@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+header, nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background: #f8f8f8;
+}
+body.dark header {
+  background: #1e1e1e;
+}
+.theme-toggle{
+  width: 50px;
+  height: 20px;
+  background: #ddd;
+  border: none;
+}
+body.dark .theme-toggle{
+  background: #1e1e1e;
+}
+.filters button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filters .active {
+  background: orange;
+  color: white;
+}
+
+body.dark .filters button {
+  background: #333;
+  color: #f1f1f1;
+}
+.sortSelect{
+  width: 200px;
+  height: 30px;
+  background: #ddd;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  left: 1125px;
+}
+main {
+  padding: 1rem;
+}
+
+.pizza-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.pizza-card {
+  width: 280px;
+  height: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+.pizza-card img{
+  width: 250px;
+  height: 260px;
+  
+}
+body.dark .pizza-card{
+  background: #1e1e1e;
+}
+body.dark .sortSelect{
+  background: #1e1e1e;
+  color: white;
+}
+.pizza-card:hover {
+  transform: scale(1.02);
+}
+
+.pizza-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.pizza-card h3 {
+  margin: 0.5rem 0;
+}
+
+.pizza-card button {
+  margin-top: 0.5rem;
+  padding: 8px 12px;
+  background: orange;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.pizza-card button.remove {
+  background: crimson;
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.empty-cart img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+

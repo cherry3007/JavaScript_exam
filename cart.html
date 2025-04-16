@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      🍕 <strong>REACT PIZZA</strong>
+      <p>самая вкусная пицца во вселенной</p>
+    </div>
+    <div class="cart">
+      <a href="index.html">← Назад</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Корзина</h2>
+
+    <div id="empty-cart" class="empty-cart" style="display: none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Пусто" width="150" />
+      <p>Корзина пуста</p>
+    </div>
+
+    <div id="cart-list" class="pizza-list"></div>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
+
